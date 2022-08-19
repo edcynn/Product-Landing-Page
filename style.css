@@ -1,0 +1,478 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.menubar {
+  background-image: linear-gradient(to top,rgb(136, 81, 36),rgb(209, 145, 92));
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 4;
+}
+
+#logo {
+  height: 80px;
+  width: 80px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  
+}
+
+.menus {
+  text-decoration: none;
+  
+}
+
+li:hover {
+  color: aqua;
+}
+
+li {
+  list-style: none;
+  padding-left: 40px;
+  font-size: 20px;
+  color: black;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#burgericon {
+  font-size: 20px;
+  display: none;
+}
+
+.align {
+  display: flex;
+}
+
+#toggle {
+ display: none;
+}
+
+@media only screen and (max-width:800px) {
+
+  #burgericon  {
+    display: block;
+  }
+
+  ul {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .menus {
+
+    display: block;
+    margin: 0;
+    
+  }
+
+  #logo {
+    display: none;
+  }
+
+  #toggle:checked + ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+  }
+
+}
+
+#homesec {
+  background:rgba(0, 0, 0, 0.7)url('./assets/bg3.webp');
+  background-size: 100% 100%;
+  background-repeat: no repeat;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition-timing-function: ease-in-out;
+  animation: transition;
+}
+
+#tagline {
+  display: flex;
+  padding-top: 200px;
+  padding-left: 150px;
+  font-size: 70px;
+  color: black;
+}
+
+#prodvid {
+  background: linear-gradient(rgb(168, 138, 98), rgb(201, 190, 190));
+}
+
+#vidbutton {
+  height: 80px;
+  width: 80px;
+  margin-left: 30%;
+}
+
+.vidwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.vidcontainer {
+  width: 90%;
+  height: 70%;
+  border: solid green 2px;
+}
+
+.iframe {
+  height: 100%;
+  width: 100%;
+}
+
+#productsec {
+  padding: 20px;
+  background-image: url('./assets/bgg.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  animation: transition;
+}
+
+h3 {
+  padding-left: 30px;
+}
+
+.productsec p {
+  text-align: center;
+  padding: 35px ;
+  font-size: 30px;
+}
+
+.productpics, .productnames {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#felton {
+  height: 300px;
+  width: 300px;
+  background-image: url(./assets/felton.png);
+  border: solid black 2px;
+  background-size: 100% 100%;
+  background-repeat: no repeat;
+}
+
+#felton:hover {
+  height: 300px;
+  width: 300px;
+  background-image: url(./assets/felton2.png);
+  background-size: 100% 100%;
+  background-repeat: no repeat;
+  border: solid black 2px;
+}
+
+#resty {
+  height: 300px;
+  width: 300px;
+  background-image: url(./assets/resty.png);
+  background-size: 100% 100%;
+  background-repeat: no repeat;
+  border: solid black 2px;
+}
+
+#resty:hover {
+  height: 300px;
+  width: 300px;
+  background-image: url(./assets/resty2.png);
+  background-size: 100% 100%;
+  background-repeat: no repeat;
+  border: solid black 2px;
+}
+
+#rhea {
+  height: 300px;
+  width: 300px;
+  background-image: url(./assets/rhea.jpg);
+  background-size: 100% 100%;
+  background-repeat: no repeat;
+  border: solid black 2px;
+}
+
+#rhea:hover {
+  height: 300px;
+  width: 300px;
+  background-image: url(./assets/rhea2.png);
+  background-size: 100% 100%;
+  background-repeat: no repeat;
+  border: solid black 2px;
+}
+
+#almira {
+  height: 300px;
+  width: 300px;
+  background-image: url(./assets/almira.webp);
+  background-size: 100% 100%;
+  background-repeat: no repeat;
+  border: solid black 2px;
+}
+
+#almira:hover {
+  height: 300px;
+  width: 300px;
+  background-image: url(./assets/almira2.webp);
+  background-size: 100% 100%;
+  background-repeat: no repeat;
+  border: solid black 2px;
+}
+
+#miller {
+  height: 300px;
+  width: 300px;
+  background-image: url(./assets/miller.webp);
+  background-size: 100% 100%;
+  background-repeat: no repeat;
+  border: solid black 2px;
+}
+
+#miller:hover {
+  height: 300px;
+  width: 300px;
+  background-image: url(./assets/miller2.png);
+  background-size: 100% 100%;
+  background-repeat: no repeat;
+  border: solid black 2px;
+}
+
+#harry {
+  height: 300px;
+  width: 300px;
+  background-image: url(./assets/harry.webp);
+  background-size: 100% 100%;
+  background-repeat: no repeat;
+  border: solid black 2px;
+}
+
+#harry:hover {
+  height: 300px;
+  width: 300px;
+  background-image: url(./assets/harry2.png);
+  background-size: 100% 100%;
+  background-repeat: no repeat;
+  border: solid black 2px;
+}
+
+#modena {
+  height: 300px;
+  width: 300px;
+  background-image: url(./assets/modena.webp);
+  background-size: 100% 100%;
+  background-repeat: no repeat;
+  border: solid black 2px;
+}
+
+#modena:hover {
+  height: 300px;
+  width: 300px;
+  background-image: url(./assets/modena2.webp);
+  background-size: 100% 100%;
+  background-repeat: no repeat;
+  border: solid black 2px;
+}
+
+#toby {
+  height: 300px;
+  width: 300px;
+  background-image: url(./assets/toby.webp);
+  background-size: 100% 100%;
+  background-repeat: no repeat;
+  border: solid black 2px;
+}
+
+#toby:hover {
+  height: 300px;
+  width: 300px;
+  background-image: url(./assets/toby2.png);
+  background-size: 100% 100%;
+  background-repeat: no repeat;
+  border: solid black 2px;
+}
+
+#forest {
+  height: 300px;
+  width: 300px;
+  background-image: url(./assets/forest.png);
+  background-size: 100% 100%;
+  background-repeat: no repeat;
+  border: solid black 2px;
+}
+
+#forest:hover {
+  height: 300px;
+  width: 300px;
+  background-image: url(./assets/forest2.png);
+  background-size: 100% 100%;
+  background-repeat: no repeat;
+  border: solid black 2px;
+}
+
+#ordersec {
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right top,rgb(56, 124, 180),rgb(51, 172, 172), rgb(51, 161, 87));
+}
+
+.orderform {
+  height: 590px;
+  padding: 50px 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.40) 2px 5px 11px;
+  z-index: 2;
+}
+
+.square1, .square2, .square3, .square4 {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.40) 2px 5px 11px;
+
+}
+
+.square1 {
+  height: 100px;
+  width: 100px;
+  top: 30%;
+  right: 4%;
+  z-index: 3;
+}
+
+#sofa-gif2{
+
+  height: 150px;
+  width: 150px;
+}
+
+.square2 {
+  height: 150px;
+  width: 150px;
+  right: 13%;
+  bottom: 30%;
+  z-index: 2;
+}
+
+.square3 {
+  height: 120px;
+  width: 120px;
+  right: 10%;
+  top: 10%;
+  z-index: 1;
+}
+
+.textfields {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 4px;
+  border-style: none;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+#formtitle {
+  color: rgb(49, 117, 94);
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.labels {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.customer-info {
+display: grid;
+height: 200px;
+}
+
+h4 {
+  margin: 35px 0px 10px 0px;
+}
+
+.align-checkboxes {
+  margin-bottom: 55px;
+  display: grid;
+  grid-template-rows: repeat(4,1fr);
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-flow: column;
+  height: 150px;
+}
+
+#button {
+display: flex;
+justify-content: center;
+
+}
+
+#submit {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;  
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+#contactsec {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./assets/contact.jpg);
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
+#contactsec p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#contact-title {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+  padding: 10px;
+  color: aquamarine;
+}
+
+.contact-container p {
+  color: rgb(45, 33, 71);
+}
+
+.contact-container {
+  padding-top: 30px;
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(75, 170, 177, 0.3);
+  backdrop-filter: blur(5px);
+  box-shadow: rgba(0, 0, 0, 0.40) 2px 5px 11px;
+}
+

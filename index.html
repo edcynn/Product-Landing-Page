@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href= "style.css">
+    <meta charset="utf-8">
+    <meta name="vviewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    
+    <div id="homesec">
+
+        <div class="menubar">
+            <div class="align">
+                <img id="logo" src="./assets/logo.png">
+                <label id="burgericon" for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle">
+                <ul>
+                    <a class="menus" href="#homesec"><li>HOME</li></a>
+                    <a class="menus" href="#productsec"><li>PRODUCTS</li></a>
+                    <a class="menus" href="#ordersec"><li>ORDER</li></a>
+                    <a class="menus" href="#contactsec"><li>CONTACT US</li></a>
+                </ul>
+            </div>
+        </div>
+
+        <div id="tagline">
+            <p>Comfort starts and <br> ends at our furniture</p>
+        </div>
+
+        <a href="#prodvid"><img id="vidbutton" src="./assets/vid.gif"></a>
+
+    </div>
+
+    <div id="prodvid">
+        <div class="vidwrapper">
+            <div class="vidcontainer">
+                <iframe class="iframe" src="https://www.youtube.com/embed/DBqNq3bN-VY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div id="productsec">
+
+        <h3>SOFAS</h3>
+        <div class="productpics">
+            <div id="felton"></div>
+            <div id="resty"></div>
+            <div id="rhea"></div>
+        </div>
+
+        <div class="productnames">
+            <p>FELTON SOFA</p>
+            <p>RESTY SOFA</p>
+            <p>RHEA SOFA</p>
+        </div>
+
+        <h3>BEDS</h3>
+        <div class="productpics">
+            <div id="almira"></div>
+            <div id="miller"></div>
+            <div id="harry"></div>
+        </div>
+
+        <div class="productnames">
+            <p>ALMIRA BED</p>
+            <p>MILLER BED</p>
+            <p>HARRY BED</p>
+        </div>
+
+        <h3>DINING SET</h3>
+        <div class="productpics">
+            <div id="modena"></div>
+            <div id="toby"></div>
+            <div id="forest"></div>
+        </div>
+
+        <div class="productnames">
+            <p>MODENA DINING SET</p>
+            <p>TOBY DINING SET</p>
+            <p>FOREST DINING SET</p>
+        </div>
+
+    </div>
+
+    <div id="ordersec">
+
+        <form class="survey-form" action="thankyou.html">
+
+
+                <div class="orderform">
+
+                    <p id="formtitle">Order Form</p>
+
+                    <div class="customer-info">
+                        <label class="labels" id="name-label">Name:</label>
+                            <input class="textfields" id="name" name="name" type="text">
+                        <label class="labels" id="address-label">Address:</label>
+                            <input class="textfields" id="address-field" name="address" type="text">
+                        <label class="labels" id="tel-label">Phone number:</label>
+                            <input class="textfields" id="tel-field" type="tel" max="11" min="11" pattern="[0-9]{11}">
+                        <label class="labels" id="email-label">Email address:</label>
+                            <input class="textfields" id="email-field" type="email" placeholder="Email address">     
+                    </div>
+
+                    <div class="align-checkboxes">  
+                        
+                        <h4>Sofa:</h4>
+                            
+                            <div>
+                                <input type="checkbox" name="sofa-options" id="feltonsofa" value="felton">
+                                <label class="sub-labels" id="felton-label">Felton Sofa</label> 
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="sofa-options" id="restysofa" value="resty">
+                                <label class="sub-labels" id="resty-label">Resty Sofa</label>
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" name="sofa-options" id="rheasofa" value="rhea">
+                                <label class="sub-labels" id="rhea-label">Rhea Sofa</label>
+                            </div>
+
+                        <h4>Bed:</h4>
+
+                            <div>
+                                <input type="checkbox" name="bed-options" id="harrysofa" value="harry">
+                                <label class="sub-labels" id="harrybed-label">Harry Bed</label>
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" name="bed-options" id="almirabed" value="almira">
+                                <label class="sub-labels" id="almira-label">Almira Bed</label>
+                            </div>
+                                
+                            <div>
+                                <input type="checkbox" name="bed-options" id="millerbed" value="miller">
+                                <label class="sub-labels" id="miller-label">Miller Bunkbed</label>
+                            </div>
+
+                        <h4>Dining Set:</h4>
+
+                            <div>
+                                <input type="checkbox" name="dining-options" id="modenadining" value="modena">
+                                <label class="sub-labels" id="modena-label">Modena Dining Set</label>
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" name="dining-options" id="tobydining" value="toby">
+                                <label class="sub-labels" id="toby-label">Toby Dining Set</label>
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" name="dining-options" id="forestdining" value="forest">
+                                <label class="sub-labels" id="forest-label">Forest Dining Set</label>
+                            </div>
+                    </div>     
+
+                    <section id="button"><input type="submit" name="submit" id="submit" value="Submit Order"></section>
+
+                </div>
+        </form>
+
+        <div class="square1"></div>
+        <div class="square2"></div>
+        <div class="square3"></div>
+
+    </div>
+
+    <div id="contactsec">
+        
+        <div class="contact-container">
+            <h5 id="contact-title">Contact Us</h5>
+            <p>WE'RE HERE TO HELP.</p>
+            <P><a href=https://www.messenger.com target="_blank">Click here</a> to Chat with us on Messenger</p>
+            <p>Phone</p>
+            <p>Call us at 09123456789</p>
+        </div>
+    
+    </div>
+
+
+
+
+
+</body>
+</html>
